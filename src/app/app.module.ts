@@ -31,6 +31,7 @@ import { OperationTypeNode } from "graphql";
                 // Create an http link:
                 const http = httpLink.create({
                     uri: 'http://localhost:3000/graphql',
+                    withCredentials: true
                 });
 
                 // Create a WebSocket link:
